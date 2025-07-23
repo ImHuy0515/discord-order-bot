@@ -5,9 +5,9 @@ from dotenv import load_dotenv
 
 # Load biến môi trường từ file .env
 load_dotenv()
-TOKEN = os.getenv("DISCORD_TOKEN")
-OWNER_ID = os.getenv("OWNER_ID")
-CHANNEL_ID = os.getenv("CHANNEL_ID")
+TOKEN = os.environ.get("DISCORD_TOKEN")
+OWNER_ID = os.environ.get("OWNER_ID")
+CHANNEL_ID = os.environ.get("CHANNEL_ID")
 
 if not TOKEN or not OWNER_ID or not CHANNEL_ID:
     raise ValueError("❌ Thiếu biến môi trường trong .env")
