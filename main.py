@@ -1,10 +1,10 @@
 import os
 import discord
 from discord.ext import commands
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
 # Load biến môi trường từ file .env
-load_dotenv()
+# load_dotenv()
 TOKEN = os.environ.get("DISCORD_TOKEN")
 OWNER_ID = os.environ.get("OWNER_ID")
 CHANNEL_ID = os.environ.get("CHANNEL_ID")
