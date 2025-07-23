@@ -42,7 +42,7 @@ async def on_message(message):
     if message.author == bot.user:
         return
 
-    if message.channel.name == "g2g_notify":
+    if message.channel.name == "newg2g":
         try:
             owner = await bot.fetch_user(OWNER_ID)
             if owner:
